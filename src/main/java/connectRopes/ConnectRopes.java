@@ -1,9 +1,12 @@
 package connectRopes;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.PriorityQueue;
 
 public class ConnectRopes {
-//
+
 //    public static int findMinCost(Integer[] ropes) {
 //        Arrays.sort(ropes);
 //        ArrayList<Integer> new_ropes = new ArrayList<>(Arrays.asList(ropes));
@@ -22,7 +25,7 @@ public class ConnectRopes {
 //
 //
 //        return sum;
-//    }
+    //}
         public static int findMinCost(Integer[] ropes) {
             PriorityQueue<Integer> new_ropes = new PriorityQueue<>();
             for (int rope : ropes) {
@@ -46,6 +49,9 @@ public class ConnectRopes {
 
     public static void main(String[] args) {
         Integer[] ropes1 = {4, 3, 2, 6};
+        //2,3,4,6
+
+        //4m
         System.out.println("Minimum cost is: " + findMinCost(ropes1));
 
     }
